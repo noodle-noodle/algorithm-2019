@@ -13,3 +13,7 @@
 * TILING2
 * TRIPATHCNT
 * SNAIL
+
+#### 2/19
+* JUMPGAME (https://algospot.com/judge/problem/read/JUMPGAME)
+* POLY (https://algospot.com/judge/problem/read/JUMPGAME)
