@@ -17,3 +17,7 @@
 #### 2/19
 * JUMPGAME (https://algospot.com/judge/problem/read/JUMPGAME)
 * POLY (https://algospot.com/judge/problem/read/POLY)
+
+#### 2/26
+* NUMB3RS(https://algospot.com/judge/problem/read/NUMB3RS)
+* JLIS(https://algospot.com/judge/problem/read/JLIS)
