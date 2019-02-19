@@ -1,3 +1,5 @@
+package pi_8;
+
 import java.util.Scanner;
 
 public class Sungyun {

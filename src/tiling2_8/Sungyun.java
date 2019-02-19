@@ -1,3 +1,5 @@
+package tiling2_8;
+
 import java.util.Scanner;
 
 public class Sungyun {
