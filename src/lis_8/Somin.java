@@ -1,5 +1,6 @@
 package lis_8;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Somin {
@@ -10,22 +11,23 @@ public class Somin {
         for (int i = 0; i < testCaseCount; i++) {
             int sequenceLength = scanner.nextInt();
             int[] sequence = new int[sequenceLength];
-            int subsequenceLength = 1;
+            int[] maxLength = new int[sequenceLength];
 
             for (int j = 0; j < sequenceLength; j++) {
                 sequence[j] = scanner.nextInt();
+                maxLength[j] = 1;
             }
 
             for (int j = 1; j < sequenceLength; j++) {
-                if (sequence[j - 1] < sequence[j]) {
-                    subsequenceLength++;
-                } else {
-                    subsequenceLength = 1;
+                for (int k = 0; k < j; k++) {
+                    if (sequence[k] < sequence[j] && maxLength[k] + 1 > maxLength[j]) {
+                        maxLength[j] = maxLength[k] + 1;
+                    }
                 }
             }
 
-            System.out.println(subsequenceLength);
+            Arrays.sort(maxLength);
+            System.out.println(maxLength[sequenceLength - 1]);
         }
     }
-
 }
