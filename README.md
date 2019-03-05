@@ -21,3 +21,7 @@
 #### 2/26
 * NUMB3RS(https://algospot.com/judge/problem/read/NUMB3RS)
 * JLIS(https://algospot.com/judge/problem/read/JLIS)
+
+#### 3/12
+* https://www.acmicpc.net/problem/2156
+* https://algospot.com/judge/problem/read/PALINDROMIZE
