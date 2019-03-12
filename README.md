@@ -25,3 +25,8 @@
 #### 3/12
 * https://www.acmicpc.net/problem/2156
 * https://algospot.com/judge/problem/read/PALINDROMIZE
+
+#### 3/19
+* https://www.acmicpc.net/problem/5214
+* https://www.acmicpc.net/problem/2146
+* https://www.acmicpc.net/problem/6118
