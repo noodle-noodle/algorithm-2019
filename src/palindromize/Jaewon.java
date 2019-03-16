@@ -1,19 +1,23 @@
 package palindromize;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 
 public class Jaewon {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
-		Scanner sc = new Scanner(System.in);
+		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		int T = Integer.parseInt(bf.readLine());
 		
-		int T = sc.nextInt();
-		sc.nextLine();
 		for(int t = 0; t< T; t++) {
 
 			//initialize
-			String str = sc.nextLine();
+			String str = bf.readLine();
 			int length = str.length();
 			
 			//solution
@@ -24,14 +28,16 @@ public class Jaewon {
 				while(i < j && str.charAt(i) == str.charAt(j)) {
 					i++; j--;
 				}
-				if(i == j) {
+				if(i >= j) {
 					result = length + l;
 					break;
 				}
 			}
 			
 			//answer
-			System.out.println(result);
+			bw.write(result + "\n");
 		}
+		bw.flush();
+		bw.close();
 	}
 }
